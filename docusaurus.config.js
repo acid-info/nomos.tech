@@ -73,10 +73,6 @@ const config = {
             label: 'Github',
             href: '/',
           },
-          {
-            type: 'localeDropdown',
-            position: 'right',
-          },
         ],
       },
       footer: {
