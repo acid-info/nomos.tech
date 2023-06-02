@@ -13,16 +13,13 @@ import {
   Box,
 } from '../components/mdx'
 
-<Hero size="medium">
+<Hero size="large">
   <HeroInfo>
-    <HeroTitle>An ecosystem of sovereign, modular blockchains</HeroTitle>
-    {/*
-        <HeroDescription className={"long"}>
-            Nomos supports the demands of aspiring network states, defending self-determination and privacy at the network level for humanity's underserved.
-        </HeroDescription>
-            * */}
-    <HeroDescription className={'short'}>
-      Nomos supports the demands of aspiring network states
+    <HeroTitle>
+      An ecosystem of sovereign, modular blockchains
+    </HeroTitle>
+    <HeroDescription>
+       Nomos supports the demands of aspiring network states, defending self-determination and privacy at the network level for humanity's underserved
     </HeroDescription>
     <HeroActions>
       <HeroAction href="https://twitter.com/Nomos_tech" target="_blank">
@@ -32,9 +29,9 @@ import {
   </HeroInfo>
   <HeroModel
     modelId={'bust01'}
-    mode={'simple'}
+    mode={'abstract'}
     rotateSpeed={0.04}
-    startY={'top'}
+    startY={'bottom'}
     asciiConfig={{
       characters: ' + ^ ^%%%0 -a @@@ ###',
     }}

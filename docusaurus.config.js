@@ -8,9 +8,6 @@ const config = {
   url: 'https://nomos.tech',
   baseUrl: '/',
 
-  customFields: {
-    ghostAPiKey: process.env.GHOST_API_KEY,
-  },
   markdown: {
     mermaid: true,
   },
@@ -33,6 +30,13 @@ const config = {
           name: 'default',
           options: {
             customCss: [require.resolve('./src/css/custom.scss')],
+            docs: {
+              default: {
+                sidebar: {
+                  hide: true,
+                },
+              },
+            },
           },
         },
         docs: {
@@ -72,8 +76,12 @@ const config = {
             to: '/about',
           },
           {
+            label: 'Features',
+            href: '/#features',
+          },
+          {
             label: 'Github',
-            href: '/',
+            href: 'https://github.com/logos-co',
           },
         ],
       },
