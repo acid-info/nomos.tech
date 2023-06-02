@@ -5,41 +5,38 @@ import {
   HeroActions,
   HeroAction,
   CallToActionSection,
+  CallToActionButton,
   FeatureList,
   Showcase,
   HeroModel,
   HeroInfo,
+  Box,
 } from '../components/mdx'
 
-<Hero size="large">
+<Hero size="medium">
   <HeroInfo>
-    <HeroTitle>The web3 managing standard</HeroTitle>
+    <HeroTitle>An ecosystem of sovereign, modular blockchains</HeroTitle>
     {/*
-            <HeroDescription>
-                Waku is a decentralized communications network that enables private, censorship-resistant messaging for web3 applications.
-            </HeroDescription>
+        <HeroDescription className={"long"}>
+            Nomos supports the demands of aspiring network states, defending self-determination and privacy at the network level for humanity's underserved.
+        </HeroDescription>
             * */}
-    <HeroDescription>
-      WAKU IS A DECENTRALIZED COMMUNICATIONS NETWORK.
+    <HeroDescription className={'short'}>
+      Nomos supports the demands of aspiring network states
     </HeroDescription>
     <HeroActions>
-      <HeroAction href="https://docs.waku.org" target="_blank">
-        Build on Waku
-      </HeroAction>
-      <HeroAction variant="filled" href="https://docs.waku.org" target="_blank">
-        Run Waku
+      <HeroAction href="https://twitter.com/Nomos_tech" target="_blank">
+        Follow Nomos
       </HeroAction>
     </HeroActions>
   </HeroInfo>
   <HeroModel
-    modelUrl="/hero/bulanding-generic-hand-01.glb"
-    layout="floating"
-    renderer="ascii"
-    initialX={-0.9831336272264352}
-    initialY={-0.14592188008227222}
-    rotateSpeed={0.1}
+    modelId={'bust01'}
+    mode={'simple'}
+    rotateSpeed={0.04}
+    startY={'top'}
     asciiConfig={{
-      characters: ' .,:;ox%#  ||| ||| waku @',
+      characters: ' + ^ ^%%%0 -a @@@ ###',
     }}
   />
 </Hero>
@@ -50,59 +47,52 @@ import {
     {
       title: 'Private',
       description:
-        'Waku leverages cutting-edge zero-knowledge encryption to ensure all messages and associated metadata benefit from rock-solid privacy guarantees.',
+        'Network-level privacy protects Nomos users and validators while making the system more resistant to censorship and external attack.',
     },
     {
-      title: 'Runs anywhere',
+      title: 'Progressive sovereignty',
       description:
-        "Waku's modularity enables developers to integrate Waku protocols according to their use case and users' hardware restraints",
+        "Nomos\' innovative execution layer enables digital communities and network states to customize various parameters while benefiting from the security of the wider chain.",
     },
     {
-      title: 'Scalable',
+      title: 'Programmable',
       description:
-        'Waku aims to scale to support millions of users by dividing the flow of messages into shards—not every node needs to forward every message—while discovery protocols ensure users connect to the nodes serving relevant messages.',
+        'Nomos\' programmability facilitates novel on-chain governance mechanisms, financial services and social interactions without relying on central entities that routinely break the trust society places in them.',
     },
     {
-      title: 'Secure',
+      title: 'Futureproof',
       description:
-        "Waku's native incentivization mechanisms ensure a wide node distribution, making it highly secure and strengthening its privacy assurances.",
+        "Understanding technology's exponential progress, Nomos is designed to enable seamless integration of the latest advances in zero-knowledge cryptography and similar emerging fields.",
     },
   ]}
-/>
+>
+</FeatureList>
 
-<CallToActionSection
-  title="User adoptions"
-  description="Waku has brought private, censorship-resistant communications to several notable web3 DApps, decentralizing their messaging components:"
-  label="Decentralize your DApp"
-  href="/join"
-/>
+<Box top={{ xs: 144, lg: 216 }}>
+  <CallToActionSection
+    title="Used by"
+    columns={2}
+    description="Nomos is still under development as part of the Logos Collective's tech stack. Logos builds shared public infrastructure to provide trust-minimized, corruption-resistant governing services and social institutions to underserved citizens."
+  />
+</Box>
 
-<Showcase
-  id="showcase"
-  items={[
-    {
-      name: 'XMTP',
-      logo: '/showcase/xmtp-mark-white.svg',
-      description:
-        "Inter-blockchain account messaging protocol XMTP uses Waku's Go implementation to facilitate communication between nodes in its currently permissioned network.",
-    },
-    {
-      name: 'Status',
-      logo: '/showcase/status-mark-white.svg',
-      description:
-        "Waku powers many of the Status super app's features, including its private messaging.",
-    },
-    {
-      name: 'Railgun',
-      logo: '/showcase/railgun-mark-white.svg',
-      description:
-        'The privacy-focused DeFi protocol Railgun anonymizes Ethereum transactions with Waku. ',
-    },
-  ]}
-/>
+<Box top={{ xs: 144, lg: 216 }}>
+  <CallToActionSection
+    title="Contributors"
+    columns={1}
+    description="Nomos is designed and built by a group of blockchain R&D veterans and ZK cryptography specialists that share a common goal of building technologies to make the world more just, equitable and free."
+    label="Read more"
+    href="/about/team"
+    target="_self"
+  />
+</Box>
 
-<CallToActionSection
-  title="Join the community to discover what Waku can bring to your DApp"
-  label="Decentralize your DApp"
-  href="/join"
-/>
+<Box top={{ xs: 144, lg: 216 }}>
+  <CallToActionSection
+    title="Development roadmap"
+    description="Central to the Nomos project is its novel consensus protocol, Carnot. Currently, the team is focused primarily on implementing Carnot as it will be foundational to all future development."
+    label="Read more"
+    href="/about/roadmap"
+    target="_self"
+  />
+</Box>
