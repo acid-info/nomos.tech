@@ -91,29 +91,13 @@ const config = {
           {
             items: [
               {
-                href: '/',
+                href: 'https://twitter.com/Nomos_tech',
                 label: 'Twitter',
-              },
-              {
-                href: '/',
-                label: 'Discord',
-              },
-              {
-                href: '/',
-                label: 'Docs',
-              },
-              {
-                href: '/',
-                label: 'Github',
               },
             ],
           },
           {
             items: [
-              {
-                href: '/',
-                label: 'Contact us',
-              },
               {
                 href: 'https://jobs.status.im/',
                 label: 'Work with us',
