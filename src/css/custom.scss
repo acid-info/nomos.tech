@@ -5,3 +5,19 @@ body,
 html {
   overflow-x: hidden;
 }
+
+nav {
+  display: none !important;
+}
+
+.wip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 200px;
+}
+
+#__docusaurus > div:first-of-type {
+  max-width: unset;
+}
