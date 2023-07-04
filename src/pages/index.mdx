@@ -2,13 +2,13 @@ import {
   Hero,
   HeroTitle,
   HeroDescription,
+  HeroVideo,
   HeroActions,
   HeroAction,
   CallToActionSection,
   CallToActionButton,
   FeatureList,
   Showcase,
-  HeroModel,
   HeroInfo,
   Box,
 } from '../components/mdx'
@@ -16,10 +16,10 @@ import {
 <Hero size="large">
   <HeroInfo>
     <HeroTitle>
-      An ecosystem of sovereign, modular blockchains
+      {'Private, Sovereign, and Modular Blockchains for Network States'} 
     </HeroTitle>
     <HeroDescription>
-       Nomos supports the demands of aspiring network states, defending self-determination and privacy at the network level for humanity's underserved
+      {'Nomos is a novel blockchain project that will address a network state’s fundamental need for adaptable privacy and sovereignty.'} 
     </HeroDescription>
     <HeroActions>
       <HeroAction href="https://twitter.com/Nomos_tech" target="_blank">
@@ -27,16 +27,14 @@ import {
       </HeroAction>
     </HeroActions>
   </HeroInfo>
-  <HeroModel
-    modelId={'bust01'}
-    mode={'abstract'}
-    rotateSpeed={0.04}
-    startY={'bottom'}
-    asciiConfig={{
-      characters: ' l.o.g.o.s ',
-      resolution: 0.17
-    }}
-  />
+
+  <HeroVideo
+    placeholderSrc="/hero/halo01-1080x1080-placeholder.png"
+  >
+    <source src="/hero/halo01-2048x2048-24fps-1M.mov" type='video/mp4; codecs="hvc1"' />
+    <source src="/hero/halo01-2048x2048-24fps-1M.webm" type="video/webm" />  
+  </HeroVideo>
+
 </Hero>
 
 <FeatureList
