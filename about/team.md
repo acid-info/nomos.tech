@@ -1,6 +1,6 @@
 ---
 title: Core contributors
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 Building Nomos is a team of passionate and experienced blockchain developers and researchers. 
