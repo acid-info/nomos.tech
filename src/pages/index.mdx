@@ -10,6 +10,7 @@ import {
   FeatureList,
   Showcase,
   HeroInfo,
+  Roadmap,
   Box,
 } from '../components/mdx'
 
@@ -19,11 +20,11 @@ import {
       {'Private, Sovereign, and Modular Blockchains for Network States'} 
     </HeroTitle>
     <HeroDescription>
-      {'Nomos is a novel blockchain project that will address a network state’s fundamental need for adaptable privacy and sovereignty.'} 
+      {'Nomos is a novel blockchain project that will address a network state\'s fundamental need for adaptable privacy and sovereignty.'} 
     </HeroDescription>
     <HeroActions>
-      <HeroAction href="https://twitter.com/Nomos_tech" target="_blank">
-        Follow Nomos
+      <HeroAction href="#" target="_blank">
+        Get involved
       </HeroAction>
     </HeroActions>
   </HeroInfo>
@@ -41,26 +42,27 @@ import {
 
 <FeatureList
   id="features"
+  title="High-level project goals"
   features={[
     {
-      title: 'Private',
+      title: 'Privacy',
       description:
-        'Network-level privacy protects Nomos users and validators while making the system more resistant to censorship and external attack.',
+        'Nomos is prioritizing privacy for both users and infrastructure providers. At the app level developers choose how much identifying and transaction information users may disclose, while validators and delegators are able to shield their participation in the network.',
     },
     {
-      title: 'Progressive sovereignty',
+      title: 'Sovereignty',
       description:
-        "Nomos\' innovative execution layer enables digital communities and network states to customize various parameters while benefiting from the security of the wider chain.",
+        "Communities have the ability to adopt the initial network state, or fork it based on a new set of rules they wish to establish. Users may remain on the initial blockchain, migrate to the new one, or be in both.",
     },
     {
-      title: 'Programmable',
+      title: 'Modularity',
       description:
-        'Nomos\' programmability facilitates novel on-chain governance mechanisms, financial services and social interactions without relying on central entities that routinely break the trust society places in them.',
+        'Nomos has an integrated modular architecture separating data availability, coordination, and execution. Modular design is essential for combining decentralization with scalability through layer-specific resource pricing.',
     },
     {
-      title: 'Futureproof',
+      title: 'Adaptability',
       description:
-        "Understanding technology's exponential progress, Nomos is designed to enable seamless integration of the latest advances in zero-knowledge cryptography and similar emerging fields.",
+        "Privacy and sovereignty are fundamental to Nomos' mission. Because they exist on a spectrum, Nomos is building mechanisms that allow both to be adapted and expanded based on the needs and maturity of a network state.",
     },
   ]}
 >
@@ -68,29 +70,72 @@ import {
 
 <Box top={{ xs: 144, lg: 216 }}>
   <CallToActionSection
-    title="Used by"
-    columns={2}
-    description="Nomos is still under development as part of the Logos Collective's tech stack. Logos builds shared public infrastructure to provide trust-minimized, corruption-resistant governing services and social institutions to underserved citizens."
-  />
-</Box>
-
-<Box top={{ xs: 144, lg: 216 }}>
-  <CallToActionSection
-    title="Contributors"
+    title="Logos Network State"
     columns={1}
-    description="Nomos is designed and built by a group of blockchain R&D veterans and ZK cryptography specialists that share a common goal of building technologies to make the world more just, equitable and free."
-    label="Read more"
-    href="/about/team"
-    target="_self"
+    description={
+      <>
+        Nomos is the blockchain layer of the Logos Network State. Logos is a grassroots movement to provide trust-minimized, corruption-resistant governing services and social institutions to peaceful people worldwide.
+        <br/>
+        <br/>
+        Learn more about our ambitious vision.  
+      </>
+    }
+    label="Explore Logos"
+    href="https://logos.co/"
+    target="_blank"
   />
 </Box>
 
 <Box top={{ xs: 144, lg: 216 }}>
+  <Roadmap
+    title="Roadmap"
+    timeline={[
+      {
+        period: '2024 Q1',
+        borderStyle: 'dashed',
+        description: "Full specification of the base layer",
+      },
+      {
+        period: '2024 Q3',
+        borderStyle: 'dashed',
+        description: 'Testnet base layer implementation',
+      },
+      {
+        period: '2024 Q4',
+        borderStyle: 'dashed',
+        description: 'Full specification of the coordination layer',
+      },
+      {
+        period: '2025 Q1',
+        description: 'Testnet coordination layer implementation',
+      },
+      {
+        period: '2025 Q3',
+        borderStyle: 'dashed',
+        description: 'Mainet base plus coordination layer launch',
+      },
+      {
+        period: '2025 Q4',
+        description: 'Specification and implementation of execution zones',
+      },
+    ]}
+  >
+    <CallToActionButton size="small" variant="outlined" href="/about/roadmap">
+      Read more
+    </CallToActionButton>
+  </Roadmap>
+</Box>
+
+<Box top={{ xs: 144, lg: 336 }}>
   <CallToActionSection
-    title="Development roadmap"
-    description="Central to the Nomos project is its novel consensus protocol, Carnot. Currently, the team is focused primarily on implementing Carnot as it will be foundational to all future development."
-    label="Read more"
-    href="/about/roadmap"
-    target="_self"
+    title={
+      <>
+        Want to get involved with Nomos? <br/> 
+        Join the Discord community.
+      </>
+    }
+    label="Discord"
+    target="_blank"
+    href="#"
   />
 </Box>
