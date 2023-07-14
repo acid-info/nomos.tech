@@ -90,6 +90,10 @@ const config = {
                 href: 'https://twitter.com/Nomos_tech',
                 label: 'Twitter',
               },
+              {
+                href: 'https://discord.gg/NYDm83h46b',
+                label: 'Discord',
+              },
             ],
           },
           {
