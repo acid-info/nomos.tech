@@ -16,10 +16,10 @@
     "@easyops-cn/docusaurus-search-local" "^0.33.6"
     lodash "^4.17.21"
 
-"@acid-info/logos-docusaurus-preset@^1.0.0-alpha.89":
-  version "1.0.0-alpha.89"
-  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-preset/-/logos-docusaurus-preset-1.0.0-alpha.89.tgz#09efa6729708c56f161472d593982bbe992c8b18"
-  integrity sha512-+Z5bgUH7jcnXGgbGNlR0gFnQQk6sQ0Vxppxznqgm3ILvUnLHTa7H50oQsxg96xwYqnIxl5tF3OxeXNk5ZWWARQ==
+"@acid-info/logos-docusaurus-preset@^1.0.0-alpha.90":
+  version "1.0.0-alpha.90"
+  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-preset/-/logos-docusaurus-preset-1.0.0-alpha.90.tgz#fd25605b7aac93da49a9d9400491a4aa73570f6c"
+  integrity sha512-RshjcMeQgnVd0N+YU0TmmtLGfDTa+NEhOfrUnTKZ3fyILJ3CZ1ES8JQubsCYIpXecLq5DEBdICLQgS3kiAz90g==
   dependencies:
     "@acid-info/docusaurus-og" "^1.0.0-alpha.76"
     "@acid-info/logos-docusaurus-search-local" "^1.0.0-alpha.47"
