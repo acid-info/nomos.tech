@@ -1,6 +1,7 @@
 ---
 title: Description and architecture
 sidebar_position: 2
+hide_table_of_contents: true
 ---
 
 Nomos was designed to serve as the trustless agreements layer for emerging network states, providing a key piece of infrastructure to the Logos tech stack. We believe that such a network must maintain the following properties:

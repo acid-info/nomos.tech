@@ -1,6 +1,7 @@
 ---
 title: About
 sidebar_position: 1
+hide_table_of_contents: true
 ---
 
 Nomos is an innovative blockchain platform designed to address the critical requirements of the network state. It aims to provide developers with secure, flexible, and scalable infrastructure for building a wide range of applications while respecting the privacy and sovereignty of its users.

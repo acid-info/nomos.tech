@@ -1,6 +1,7 @@
 ---
 title: Development roadmap
 sidebar_position: 3
+hide_table_of_contents: true
 ---
 
 At this early stage of Nomos' development, the team is primarily focused on implementing the network's consensus protocol, Carnot. As the consensus protocol is so foundational to the rest of the project, it must precede other development areas. Alongside Carnot, Nomos' contributors are working on defining the network architecture, which will also influence future roadmap items.

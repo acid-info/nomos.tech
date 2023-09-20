@@ -40,6 +40,7 @@ const config = {
           },
         },
         docs: {
+          breadcrumbs: false,
           routeBasePath: '/',
           path: 'root-pages',
         },
@@ -68,16 +69,18 @@ const config = {
             type: 'search',
           },
           {
-            label: 'About',
+            label: 'About Nomos',
             to: '/about',
           },
           {
-            label: 'Features',
-            href: '/#features',
+            label: 'Community',
+            to: '/community',
           },
           {
-            label: 'Github',
             href: 'https://github.com/logos-co',
+            position: 'right',
+            className: 'header-github-link',
+            title: 'Waku GitHub repository',
           },
         ],
       },
