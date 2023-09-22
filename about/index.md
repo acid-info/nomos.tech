@@ -1,5 +1,5 @@
 ---
-title: About
+title: About Nomos
 sidebar_position: 1
 hide_table_of_contents: true
 ---
