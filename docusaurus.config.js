@@ -58,6 +58,13 @@ const config = {
         path: 'about',
       },
     ],
+    [
+      '@acid-info/docusaurus-fathom',
+      {
+        siteId: 'PJCVI',
+        scriptUrl: 'https://fathom.status.im/tracker.js',
+      },
+    ],
   ],
 
   themeConfig:
