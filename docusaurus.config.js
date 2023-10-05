@@ -84,7 +84,7 @@ const config = {
             to: '/community',
           },
           {
-            href: 'https://github.com/logos-co',
+            href: 'https://github.com/logos-co/nomos-node',
             position: 'right',
             className: 'header-github-link',
             title: 'Nomos GitHub repository',
