@@ -13,11 +13,11 @@ import {
   CallToActionSection,
   CallToActionButton,
   FeatureList,
-  Showcase,
   HeroInfo,
-  Roadmap,
   Box,
-  ProfileCards,
+  Grid,
+  ProfileCard,
+  TimelineItem,
 } from '../components/mdx'
 
 <Hero size="large">
@@ -94,45 +94,68 @@ import {
 </Box>
 
 <Box top={{ xs: 144, lg: 216 }}>
-  <Roadmap
-    title="Roadmap"
-    alignment="top"
-    timeline={[
-      {
-        period: '2024 Q1 & Q2',
-        borderStyle: 'solid',
-        description: "Full specification of the base layer",
-      },
-      {
-        period: '2024 Q3',
-        borderStyle: 'solid',
-        description: 'Testnet base layer implementation',
-      },
-      {
-        period: '2024 Q4',
-        borderStyle: 'dashed',
-        description: 'Full specification of the coordination layer',
-      },
-      {
-        period: '2025 Q1 & Q2',
-        borderStyle: 'solid',
-        description: 'Testnet coordination layer implementation',
-      },
-      {
-        period: '2025 Q3',
-        borderStyle: 'solid',
-        description: 'Mainnet base plus coordination layer launch',
-      },
-      {
-        period: '2025 Q4',
-        description: 'Specification and implementation of execution zones',
-      },
-    ]}
+  <SectionHeader
+    title="Development Roadmap"
+    description="Codex is currently in its first proof-of-concept iteration and aims to release its beta version, Katana, before the end of Q4 2023."
+    bottom={{ xs: '4rem', lg: '7.25rem' }}
+  />
+  <Grid
+    xs={{ cols: 6, wrap: false, gap: '0 1rem' }}
+    actions={
+      <CallToActionButton style={{ marginTop: 0 }} size="small" variant="outlined" href="/about/roadmap">
+        Read more
+      </CallToActionButton>
+    }
   >
-    <CallToActionButton size="small" variant="outlined" href="/about/roadmap">
-      Read more
-    </CallToActionButton>
-  </Roadmap>
+			<Grid.Item>
+				<TimelineItem
+        	index={0}
+        	period='2024 Q1 & Q2'
+        	borderStyle='solid'
+        	description="Full specification of the base layer"
+        />
+      </Grid.Item>
+      <Grid.Item>
+      	<TimelineItem
+        	index={1}
+        	period='2024 Q3'
+        	borderStyle='solid'
+        	description='Testnet base layer implementation'
+        />
+      </Grid.Item>
+      <Grid.Item>
+      	<TimelineItem
+        	index={2}
+        	period='2024 Q4'
+        	borderStyle='dashed'
+        	description='Full specification of the coordination layer'
+        />
+      </Grid.Item>
+      <Grid.Item>
+      	<TimelineItem
+        	index={3}
+        	period='2025 Q1 & Q2'
+        	borderStyle='solid'
+        	description='Testnet coordination layer implementation'
+        />
+      </Grid.Item>
+      <Grid.Item>
+      	<TimelineItem
+        	index={4}
+        	period='2025 Q3'
+        	borderStyle='solid'
+        	description='Mainnet base plus coordination layer launch'
+        />
+      </Grid.Item>
+      <Grid.Item>
+      	<TimelineItem
+        	index={5}
+        	period='2025 Q4'
+        	description='Specification and implementation of execution zones'
+          borderStyle="none"
+        />
+      </Grid.Item>
+  </Grid>
 </Box>
 
 <Box top={{ xs: 144, lg: 216 }}>
@@ -140,17 +163,22 @@ import {
     title="Team"
     columns={1}
   />
-  <ProfileCards
-    items={[
-      {
-        name: 'Name',
-        githubUsername: 'Github',
-        githubLink: 'https://github.com/',
-        discordUsername: 'Discord',
-        discordLink: 'https://discord.gg/',
-      },
-    ]}
-  />
+   <Box top={{ xs: 40, md: 80 }} bottom={{ xs: 40, md: 80 }}>
+    <Grid
+      xs={{ cols: 3, gap: '1rem', wrap: false }}
+      md={{ cols: 4, gap: '1rem', wrap: true }}
+    >
+      <Grid.Item>
+        <ProfileCard
+          name='Name'
+          githubUsername='Github'
+          githubLink='https://github.com/'
+          discordUsername='Discord'
+          discordLink='https://discord.gg/'
+        />
+      </Grid.Item>
+    </Grid>
+  </Box>
 </Box>
 
 <Box top={{ xs: 144, lg: 336 }}>

@@ -1,39 +1,40 @@
 ---
 title: Join the community
+wrapperClassName: community-container
 ---
 
-import { Community } from '../components/mdx'
-
-<div className="community-container">
+import { Grid, Box, SocialCard } from '../components/mdx'
 
 # Join the community
 
-<br/>
-<br/>
-
-Welcome to the Nomos Community!
-
-<br/>
+<Box top={48} bottom={24}>
+  Welcome to the Nomos Community!
+</Box>
 
 Join us as we build a novel blockchain layer ideal for a network state. Be the first to receive our latest news,  access documentation, and celebrate with us as we get closer to realising the Logos network state. 
 
-<Community
-  items={[
-    {
-      type: 'x',
-      link: 'https://twitter.com/Nomos_tech',
-      linkLabel: 'Follow us on X',
-    },
-    {
-      type: 'discord',
-      link: 'https://discord.com/invite/NYDm83h46b',
-      linkLabel: 'Join the community on Discord',
-    },
-    {
-      type: 'github',
-      link: 'https://github.com/logos-co/nomos-node',
-      linkLabel: 'Contribute to Github',
-    },
-  ]}
-/>
-</div>
+<Box top={56} bottom={56}>
+  <Grid xs={{ cols: 1, gap: '1rem' }} md={{ cols: 2 }}>
+    <Grid.Item xs={1}>
+      <SocialCard
+        href='https://twitter.com/Nomos_tech'
+        logoSrcDark="/icons/x.svg"  
+        description='Follow us on X'
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <SocialCard
+        href='https://discord.com/invite/NYDm83h46b'
+        logoSrcDark="/icons/discord-white.svg"
+        description='Join the community on Discord'
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <SocialCard
+        href='https://github.com/logos-co/nomos-node'
+        logoSrcDark="/icons/github-white.svg"
+        description='Contribute to Github'
+      />
+    </Grid.Item>
+  </Grid>
+</Box>
