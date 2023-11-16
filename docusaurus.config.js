@@ -44,6 +44,11 @@ const config = {
           routeBasePath: '/',
           path: 'root-pages',
         },
+        generated: {
+          jobList: {
+            jobBoard: 'nomos',
+          },
+        },
         og: {},
       }),
     ],
@@ -75,6 +80,10 @@ const config = {
           {
             label: 'Community',
             to: '/community',
+          },
+          {
+            label: 'Join Us',
+            to: '/join-us',
           },
           {
             href: 'https://github.com/logos-co/nomos-node',
