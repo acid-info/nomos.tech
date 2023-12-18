@@ -110,6 +110,10 @@ const config = {
                 href: 'https://discord.gg/NYDm83h46b',
                 label: 'Discord',
               },
+              {
+                href: 'https://guide.nomos.tech/',
+                label: 'Brand Guidelines',
+              },
             ],
           },
           {
