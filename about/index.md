@@ -14,7 +14,7 @@ We believe that blockchain technology has the potential to lay the foundations o
 
 ## Network-level resiliency, network-level sovereignty
 
-
+We seek to maximize the antifragility of our network. It should be unstoppable and incorruptible, with security layers focused on deterring bad actors. Not only will Nomos support good nodes, it will protect and reward them. This type of antifragility is needed to power the self-sovereign virtual territories and network states of tomorrow. Decentralised, impregnable governance is the key to securing the future.
 
 We believe that absolute transparency massively limits the scope of the technology's adoption, and therefore its revolutionary potential. We cannot expect individuals to voluntarily exit the current system into one in which their every interaction (both financial and social) is forever available for the entire world to see. When we buy a coffee, for example, there is no need for the seller to see our salary, other purchase history, or political leanings.
 
