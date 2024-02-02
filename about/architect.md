@@ -8,11 +8,11 @@ Nomos was designed to serve as the trustless agreements layer for emerging netwo
 
 - **Maximum decentralisation:** Nomos is designed to place minimum resource demands on validators, ensuring that those without access to powerful hardware can participate. With the network maximally accessible, greater numbers of users can join as full peers, strengthening Nomos from a security perspective.
 
-- **Multi-chain ecosystem:** Nomos' multi-chain architecture is designed to support multiple heterogeneous network states with their own rules, or even desires for independence. In addition to extending greater sovereignty to the network states on Nomos, this approach enables unlimited horizontal scaling.
+- **Modular Architecture:** We focus on implementing a modular architecture that decouples consensus and data availability from state execution and verification. This decoupling allows for maximum scalability for our blockchain technology, facilitating agile experiments in governance.
 
-- **Isolated performance trade-offs:** Nomos will provide a means for customizable execution environments in which trade-offs can be made to achieve performance enhancements such as high transaction throughput.
+- **Isolated performance trade-offs:** Nomos will provide a means for customizable execution environments called Nomos Zones in which trade-offs can be made to achieve performance enhancements such as high transaction throughput.
 
-- **Privacy-centric:** We believe privacy is essential for the self-determination and sovereignty of aspiring network states. Consequently, Nomos has been designed to protect user privacy at the network level, and in such a way as to enable the integration of new privacy techniques as they become available.
+- **High Network Resiliency:** Nomos puts an emphasis on mechanisms to protect the network from sophisticated and targeted attacks. The system identifies and targets risky nodes to ensure the strength of the network while supporting hundreds of thousands of nodes in the process, ensuring uncompromised resiliency.
 
 ### Design space
 
