@@ -12,15 +12,11 @@ We believe that blockchain technology has the potential to lay the foundations o
 
 <br/>
 
-## Network-level privacy, network-level sovereignty
+## Network-level resiliency, network-level sovereignty
 
-Bitcoin and Ethereum emerged from the cypherpunk tradition. As Eric Hughes wrote in his seminal 1993 essay, "A Cypherpunk's Manifesto":
 
-> "Privacy is necessary for an open society in the electronic age."
 
-Yet, neither network protects the right to privacy by default. Without network-level privacy, these technologies are, in fact, the perfect tool for surveillance because every on-chain interaction is recorded publicly forever.
-
-We believe that such absolute transparency massively limits the scope of the technology's adoption, and therefore its revolutionary potential. We cannot expect individuals to voluntarily exit the current system into one in which their every interaction (both financial and social) is forever available for the entire world to see. When we buy a coffee, for example, there is no need for the seller to see our salary, other purchase history, or political leanings.
+We believe that absolute transparency massively limits the scope of the technology's adoption, and therefore its revolutionary potential. We cannot expect individuals to voluntarily exit the current system into one in which their every interaction (both financial and social) is forever available for the entire world to see. When we buy a coffee, for example, there is no need for the seller to see our salary, other purchase history, or political leanings.
 
 ### Consent of the governed
 
