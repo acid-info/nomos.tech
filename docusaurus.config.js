@@ -106,7 +106,7 @@ const config = {
         ],
       },
       footer: {
-        copyright: 'Nomos @2023<br/>All Rights Reserved.',
+        copyright: 'Nomos',
         links: [
           {
             items: [
