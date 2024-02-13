@@ -68,7 +68,7 @@ const config = {
       {
         siteId: 'PJCVI',
         scriptUrl: 'https://fathom.status.im/tracker.js',
-        hostnames: ['nomos.tech'],
+        // hostnames: ['nomos.tech'],
       },
     ],
   ],
