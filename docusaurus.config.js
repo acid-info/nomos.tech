@@ -66,7 +66,7 @@ const config = {
     [
       '@acid-info/docusaurus-fathom',
       {
-        siteId: 'PJCVI',
+        siteId: 'TDSPJ',
         scriptUrl: 'https://fathom.status.im/tracker.js',
         // hostnames: ['nomos.tech'],
       },
