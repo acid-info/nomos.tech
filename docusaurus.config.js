@@ -94,6 +94,10 @@ const config = {
             to: '/community',
           },
           {
+            label: 'Blog',
+            href: 'https://blog.nomos.tech/',
+          },
+          {
             label: 'Join Us',
             to: '/join-us',
           },
@@ -117,6 +121,10 @@ const config = {
               {
                 href: 'https://discord.gg/NYDm83h46b',
                 label: 'Discord',
+              },
+              {
+                label: 'Blog',
+                href: 'https://blog.nomos.tech/',
               },
             ],
           },
