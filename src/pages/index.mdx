@@ -7,24 +7,31 @@ import {
   Hero,
   HeroTitle,
   HeroDescription,
-  HeroVideo,
   HeroActions,
   HeroAction,
   CallToActionSection,
   CallToActionButton,
   FeatureList,
   HeroInfo,
+  HeroImage,
   Box,
+  Grid,
   Roadmap,
+  ShowcaseCard,
+  SectionHeader,
+  InputCTASection,
 } from '../components/mdx'
 
-<Hero size="large">
-  <HeroInfo>
-    <HeroTitle>
-      {'Resilient, Sovereign, and Censorship-resistant Blockchains for Network States'} 
+import { Button } from '@acid-info/lsd-react'
+import Link from '@docusaurus/Link'
+
+<Hero size="large" verticalAlign="center">
+  <HeroInfo hideScrollToBottom>
+    <HeroTitle uppercase={false}>
+      Resilient, Sovereign, and Censorship-resistant Blockchains for Network States
     </HeroTitle>
     <HeroDescription>
-      {'Nomos is a novel blockchain project that will address a network state\'s fundamental need for sovereignty and interconnectedness.'} 
+      Nomos is a novel blockchain project that will address a network state\'s fundamental need for sovereignty and interconnectedness.
     </HeroDescription>
     <HeroActions>
       <HeroAction href="https://github.com/logos-co/nomos-node" target="_blank">
@@ -32,68 +39,77 @@ import {
       </HeroAction>
     </HeroActions>
   </HeroInfo>
-
-  <HeroVideo
-    placeholderSrc="/hero/david04-1080x1080-placeholder.png"
-    desktop={{ scale: "1.917" }}
-    mobile={{ scale: "1.917", minHeight: "80vh", height: '100%'  }}
-  >
-    <source src="/hero/david04-2048x2048-24fps-1M.mov" type='video/mp4; codecs="hvc1"' />
-    <source src="/hero/david04-2048x2048-24fps-1M.webm" type="video/webm" />  
-  </HeroVideo>
-
+  <HeroImage src="/hero/hero-image.png" alt="alt" />
 </Hero>
 
-<FeatureList
-  id="features"
-  alignment="top"
-  title="Core Values"
-  features={[
-    {
-      title: 'Resiliency',
-      description:
-        'A resilient network protects its most valuable nodes by making the nodes with high concentration of stake indistinguishable from the rest - cleverly concealing their outsized contribution among the set of all nodes.',
-    },
-    {
-      title: 'Censorship-Resistance.',
-      description:
-        "Nomos provides the foundation for protocols that adhere to the principles of plausible deniability, allowing nodes to contribute to the system without making political or preferential choices - by making transactions invisible.",
-    },
-    {
-      title: 'Sovereignty',
-      description:
-        'Infrastructure for digital communities must provide the right environment for new ideas to flourish. Sovereignty, at its core, is the ability for communities to define their own rules.',
-    },
-    {
-      title: 'Interconnectedness',
-      description:
-        "While Nomos prioritizes sovereignty, it also values heavily the interconnection of communities. Careful balancing of these two forces is essential for the success of every single collective.",
-    },
-  ]}
->
-</FeatureList>
+<Box>
+  <SectionHeader noBorder title="Core values">
+  </SectionHeader>
+  <Box top={{ xs: 64 }}>
+    <Grid
+      xs={{ cols: 2, wrap: true, gap: '1.5rem 1em' }}
+      lg={{ cols: 4, gap: '1rem' }}
+    >
+      <Grid.Item>
+        <ShowcaseCard
+          index={1}
+          name="Resiliency"
+          description="A resilient network protects its most valuable nodes by making the nodes with high concentration of stake indistinguishable from the rest - cleverly concealing their outsized contribution among the set of all nodes."
+          borderStyle="none"
+        />
+      </Grid.Item>
+      <Grid.Item>
+        <ShowcaseCard
+          index={2}
+          name="Censorship resistant"
+          description="Nomos provides the foundation for protocols that adhere to the principles of plausible deniability, allowing nodes to contribute to the system without making political or preferential choices - by making transactions invisible."
+          borderStyle="none"
+        />
+      </Grid.Item>
+      <Grid.Item>
+        <ShowcaseCard
+          index={3}
+          name="Sovereignty"
+          description="Infrastructure for digital communities must provide the right environment for new ideas to flourish. Sovereignty, at its core, is the ability for communities to define their own rules."
+          borderStyle="none"
+        />
+      </Grid.Item>
+      <Grid.Item>
+        <ShowcaseCard
+          index={4}
+          name="Interconnectedness"
+          description='While Nomos prioritizes sovereignty, it also values heavily the interconnection of communities. Careful balancing of these two forces is essential for the success of every single collective.'
+          borderStyle="none"
+        />
+      </Grid.Item>
+    </Grid>
+  </Box>
+</Box>
 
-<Box top={{ xs: 144, lg: 216 }}>
+
+<Box top={{ xs: 144, lg: 190 }}>
   <CallToActionSection
     title="Logos Collective"
     columns={1}
-    description={
-      <>
+    border={false}
+    align="center"
+    description={<>
         Nomos is the blockchain layer of the Logos technology stack. Logos is a grassroots movement, building the infrastructure for trust-minimised, corruption-resistant governing services and social institutions for peaceful people worldwide.
-        <br/>
-        <br/>
-        Learn more about our ambitious vision.  
-      </>
-    }
+        <br /><br />
+        Learn more about our ambitious vision.
+      </>}
     label="Explore Logos"
     href="https://logos.co/"
     target="_blank"
   />
 </Box>
 
-<Box top={{ xs: 144, lg: 216 }}>
-  <Roadmap
+<Box top={{ xs: 144, lg: 190 }}>
+  <Roadmap 
+    noBorder
     title="Development Roadmap"
+    href="/about/roadmap"
+    linkLabel="Learn more"
     timeline={[
       {
         period: [2024, 'Q1 & Q2'],
@@ -121,22 +137,46 @@ import {
       }
     ]}
   >
-    <CallToActionButton style={{ marginTop: 0 }} size="small" variant="outlined" href="/about/roadmap">
-      Read more
-    </CallToActionButton>
   </Roadmap>
 </Box>
 
-<Box top={{ xs: 144, lg: 336 }}>
-  <CallToActionSection
-    title={
-      <>
-        Want to get involved with Nomos? <br/> 
-        Join the Discord community.
-      </>
-    }
-    label="Discord"
-    target="_blank"
-    href="https://discord.gg/NYDm83h46b"
-  />
+<Box top={{ xs: 152, lg: 300 }}>
+  <Grid
+    xs={{ cols: 1, gap: '1rem' }}
+    md={{ cols: 2 }}
+  >
+    <Grid.Item xs={1}>
+      <InputCTASection
+        description={
+          'Want to get involved with Nomos?\nJoin the Discord community.'
+        }
+        link="https://discord.gg/NYDm83h46b"
+        label="Get Involved"
+      />
+    </Grid.Item>
+    <Grid.Item xs={1}>
+      <InputCTASection
+        description={'Subscribe\nto our newsletter'}
+        label="Subscribe"
+        formInput={[
+          {
+            label: 'Name',
+            placeholder: 'Name',
+            type: 'text',
+            name: 'name',
+            required: true,
+          },
+          {
+            label: 'Email',
+            placeholder: 'Enter your email',
+            type: 'email',
+            name: 'email',
+            required: true,
+          },
+        ]}
+        formListId={13}
+      />
+    </Grid.Item>
+  </Grid>
 </Box>
+
