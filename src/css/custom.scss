@@ -16,9 +16,9 @@ html {
   align-items: center;
 }
 
-.main-wrapper > .container {
-  overflow-x: hidden;
-}
+// .main-wrapper > .container {
+//   overflow-x: hidden;
+// }
 
 .mdx-hero > .mdx-hero-asset video {
   position: absolute;
@@ -27,13 +27,17 @@ html {
   margin-top: -40%;
 }
 
+// .mdx-page nav {
+//   background: transparent;
+// }
+
 @media screen and (min-width: 996px) {
   .mdx-hero > .mdx-hero-asset video {
     position: absolute;
     right: 0;
     top: 0;
     margin-right: -280px;
-    margin-top: -55%;
+    margin-top: -60%;
     scale: 0.95;
   }
 }
