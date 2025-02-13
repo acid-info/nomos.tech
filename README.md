@@ -71,8 +71,8 @@ $ yarn serve
 
 ## CI/CD
 
-- [CI builds](https://ci.infra.status.im/job/website/job/nomos.tech/) `master` and pushes to `deploy-master` branch, which is hosted at <https://nomos.tech//>.
-- [CI builds](https://ci.infra.status.im/job/website/job/dev.nomos.tech/) `develop` and pushes to `deploy-develop` branch, which is hosted at <https://dev.nomos.tech//>.
+- [CI builds](https://ci.infra.status.im/job/website/job/nomos.tech/) `master` and pushes to `deploy-master` branch, which is hosted at <https://nomos.tech/>.
+- [CI builds](https://ci.infra.status.im/job/website/job/dev.nomos.tech/) `develop` and pushes to `deploy-develop` branch, which is hosted at <https://dev.nomos.tech/>.
 
 The hosting is done using [Caddy server with Git plugin for handling GitHub webhooks](https://github.com/status-im/infra-misc/blob/master/ansible/roles/caddy-git).
 
