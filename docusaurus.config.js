@@ -64,14 +64,6 @@ const config = {
         path: 'about',
       },
     ],
-    [
-      '@acid-info/docusaurus-fathom',
-      {
-        siteId: 'TDSPJ',
-        scriptUrl: 'https://fathom.bi.status.im/tracker.js',
-        // hostnames: ['nomos.tech'],
-      },
-    ],
   ],
 
   themeConfig:
