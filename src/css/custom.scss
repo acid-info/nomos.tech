@@ -27,9 +27,15 @@ html {
   margin-top: -40%;
 }
 
-// .mdx-page nav {
-//   background: transparent;
-// }
+.mdx-page nav {
+  background: transparent;
+}
+
+@media screen and (min-width: 1440px) {
+  .mdx-hero > .mdx-hero-asset video {
+    scale: 0.9;
+  }
+}
 
 @media screen and (min-width: 996px) {
   .mdx-hero > .mdx-hero-asset video {
@@ -38,7 +44,7 @@ html {
     top: 0;
     margin-right: -280px;
     margin-top: -60%;
-    scale: 0.95;
+    scale: 0.8;
   }
 }
 
