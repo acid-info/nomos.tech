@@ -64,6 +64,13 @@ const config = {
         path: 'about',
       },
     ],
+    [
+      '@acid-info/docusaurus-umami',
+      {
+        websiteId: '896c23f7-42d6-40c3-aa82-a77e13ecd899',
+        scriptSrc: 'https://umami.bi.status.im/script.js',
+      },
+    ],
   ],
 
   themeConfig:
