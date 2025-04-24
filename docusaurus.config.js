@@ -69,6 +69,7 @@ const config = {
       {
         websiteId: '896c23f7-42d6-40c3-aa82-a77e13ecd899',
         scriptSrc: 'https://umami.bi.status.im/script.js',
+        dataDomains: 'nomos.tech',
       },
     ],
   ],
