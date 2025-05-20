@@ -37,8 +37,7 @@ import Link from '@docusaurus/Link'
       <HeroAction 
         href="https://github.com/logos-co/nomos-node" 
         target="_blank"
-        data-umami-event="Github redirection"
-        data-umami-event-source="hero"
+        onClick={() => umami.track('Github redirection', { source: 'hero' })}
       >
         Visit Github
       </HeroAction>
