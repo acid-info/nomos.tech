@@ -1,15 +1,15 @@
 {
-    "timestamp": "2025-05-20T15:56:37Z",
+    "timestamp": "2025-05-20T16:19:03Z",
     "git": {
-        "commit": "cce4e91dfc5664a746455c621633b00651b95041",
+        "commit": "de3eab47c318f34074bb1529f7c7fd2a0921dd18",
         "branch": "origin/develop",
         "url": "git@github.com:acid-info/nomos.tech.git"
     },
     "build": {
-        "id": "123",
-        "number": "123",
+        "id": "124",
+        "number": "124",
         "name": "website/dev.nomos.tech",
         "slave": "linux-02",
-        "url": "https://ci.infra.status.im/job/website/job/dev.nomos.tech/123/"
+        "url": "https://ci.infra.status.im/job/website/job/dev.nomos.tech/124/"
     }
 }
