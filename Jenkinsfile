@@ -45,7 +45,7 @@ pipeline {
                 -b ${deployBranch()} \
                 -c ${deployDomain()} \
                 -p build
-            """)
+            """, pure: false)
           }
         }
       }
