@@ -95,6 +95,10 @@ const config = {
             to: '/community',
           },
           {
+            label: 'Docs',
+            href: 'https://nomos-tech.notion.site/project',
+          },
+          {
             label: 'Blog',
             href: 'https://blog.nomos.tech/',
           },
