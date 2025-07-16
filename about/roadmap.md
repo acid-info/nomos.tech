@@ -1,10 +1,9 @@
 ---
-title: Development roadmap
+title: Development Roadmap
 sidebar_position: 3
 hide_table_of_contents: true
 ---
 
-At this early stage of Nomos' development, the team is primarily focused on implementing the network's consensus protocol, Carnot. As the consensus protocol is so foundational to the rest of the project, it must precede other development areas. Alongside Carnot, Nomos' contributors are working on defining the network architecture, which will also influence future roadmap items.
+At the time of writing, the Nomos team is preparing to launch its public testnet in early 2026. With the majority of its protocols and architecture specified, the focus of effort is now placed on implementing Nomos V1. At the same time, research remains ongoing for improvements to the project, providing a vision for future iterations of Nomos.
 
-After defining the network architecture and implementing the consensus protocol, we can establish further milestones both above and below the consensus protocol. Above the consensus layer will be the network's data model and execution environments, which will enable advanced functionality. Below will be P2P networking and peer discovery, which must be built or integrated while maintaining privacy and performance.
-
+For updates on the project’s progress, please visit [our blog](https://blog.nomos.tech/).

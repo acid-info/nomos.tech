@@ -1,93 +1,43 @@
 ---
-title: Description and architecture
+title: Description and Architecture
 sidebar_position: 2
 hide_table_of_contents: true
 ---
 
-Nomos was designed to serve as the trustless agreements layer for emerging network states, providing a key piece of infrastructure to the Logos tech stack. We believe that such a network must maintain the following properties:
+Nomos is a blockchain infrastructure that makes it easy to build network states and other decentralised applications. It was designed with the following principles in mind:
 
-- **Maximum decentralisation:** Nomos is designed to place minimum resource demands on validators, ensuring that those without access to powerful hardware can participate. With the network maximally accessible, greater numbers of users can join as full peers, strengthening Nomos from a security perspective.
+- **Privacy:** Nomos must protect information associated with all participants, regardless of their involvement in the network. On the infrastructure level, Nomos nodes must be confident that their block proposals have a very low probability of being traced. Nomos also provides developers with the tools to build applications with programmable privacy, allowing these applications to keep personal data hidden.
 
-- **Modular Architecture:** We focus on implementing a modular architecture that decouples consensus and data availability from state execution and verification. This decoupling allows for maximum scalability for our blockchain technology, facilitating agile experiments in governance.
+- **Neutrality:** Activity on Nomos must be handled in a way that does not compromise the public neutrality of Nomos nodes. This way, nodes can participate in processing transactions without having to make their inclusion public. If a Nomos-native application attempts to censor a user by excluding their transactions, Nomos provides a fallback path to ensure that the transaction is included.
 
-- **Isolated performance trade-offs:** Nomos will provide a means for customizable execution environments called Nomos Zones in which trade-offs can be made to achieve performance enhancements such as high transaction throughput.
+- **Resilience:** Nomos must remain operational and protect privacy in the face of complex geopolitical scenarios, surviving challenges like a partitioned internet, heavy censorship, and hostile government action. To attract validators and reduce points of failure, running a Nomos node even on a laptop must be easy and straightforward. Scaling to accommodate as many nodes as possible is best accomplished with a consensus protocol that prioritises liveness, resulting in a network that continues operating even in the worst of conditions.
 
-- **High Network Resiliency:** Nomos puts an emphasis on mechanisms to protect the network from sophisticated and targeted attacks. The system identifies and targets risky nodes to ensure the strength of the network while supporting hundreds of thousands of nodes in the process, ensuring uncompromised resiliency.
+## Network Architecture
 
-### Design space
+Nomos is implemented as two blockchain layers. Applications can be built on lightweight, permissionless blockchains known as **Zones**, which are built on top of a solid base layer foundation known as **Bedrock**. Nomos’ Bedrock and its associated **Services**, together with the Nomos Zones, is known as the **Nomos Network**.
 
-To achieve the above, Nomos is developing an underexplored area in the design space between Ethereum, Cosmos, Polkadot, and newer systems like Celestia and Anoma.
+For detailed, up-to-date descriptions of how all these components work, take a look at our [official specifications](https://nomos-tech.notion.site/project). For a more high-level overview, see below.
 
-Ethereum pioneered the concept of a blockchain network capable of smart contract execution, ushering in an ongoing era of monetary and organisational experimentation. Yet, it is vulnerable to various centralising forces. Furthermore, while its rollup-centric approach to scaling has the potential for decentralisation, most rollups today rely on centralised sequencers, and inter-rollup communication presents its own complications. While Nomos is inspired by Ethereum in many ways, these limitations make Ethereum ill-suited for our vision of a network of network states.
+<br/>
 
-App-chain ecosystems like Cosmos and Polkadot offer an alternative architecture but introduce their own challenges. Examples include bootstrapping sufficient participants to ensure the economic security of multiple independent chains, and addressing the asynchronous nature of cross-chain protocols. While Polkadot's shared security model offers something of a solution, the network fails to enable easy, permissionless participation and its parachains cannot be considered fully sovereign.
-
-Meanwhile, Anoma's fractal approach to scaling maintains decentralisation while providing flexibility and customizability closer to our vision for Nomos. However, the approach is still to be tested widely by real-world applications, which will surely produce its own challenges. Finally, Nomos implements insights from Celestia's architecture in its approach to communication, sovereignty, and scalability.
+![Nomos Architecture](/subpages/nomos-architecture.webp)
 
 <br />
 
-### Network architecture
+### Bedrock
 
-Nomos consists of three layers—the Base Layer, Coordination Layer, and Execution Zones. Each has a specific role that contributes to the system's functionality and performance.
+**Bedrock** is a large-scale validator network that serves as the foundational layer of Nomos, providing consensus and lightweight verification to Nomos Zones. Its Private Proof of Stake (PPoS) consensus protocol ensures block proposers retain their privacy, while remaining scalable, resilient, and accessible Bedrock verifies proofs sent by Zones to ensure that they are operating correctly, and facilitates app privacy and interoperability.
 
-<br />
+Serving as a Bedrock validator is as simple as having the Nomos node application run in the background on a laptop, with a “set it and forget it” approach to maintenance. This design makes it easy to contribute to the security, consensus, and interoperability of the Nomos Network. A user may instead choose to run a **light node**, allowing them to independently verify the state of the network with even less hardware resources. In fact, light nodes can even run on a mobile phone or a browser wallet.
 
-**Base Layer**
+## Bedrock Services
 
-Nomos' Base Layer focuses exclusively on consensus, data availability, and decentralisation, with the goal of ensuring stability, security, and scalability for the rest of the network. No execution or validation is performed at the Base Layer, as functions requiring access to state cannot be as reliably decentralised as consensus and data availability.
+While Bedrock provides the core functionality, more advanced features are provided by the **Nomos Bedrock Services**. Nomos uses these Services to provide data scalability, network-level privacy for consensus, and executors that ensure Zones remain live by updating their state. While these Services are important for ensuring that Nomos can operate under the most adversarial conditions, Bedrock can still operate without them if necessary. Node operators who choose to participate in providing Bedrock Services are expected to have increased hardware requirements compared to the minimal ones necessary for Bedrock validation.
 
-The Carnot consensus protocol is crucial to ensuring high performance as the network scales from a few validators to tens of thousands. A forthcoming paper covers Carnot in greater detail. 
+## Zones
 
-Alongside ensuring maximum decentralisation, the Base Layer also strives to make data availability scalable. It achieves this by:
+Nomos is primarily designed for applications on **Zones**, which together form the **Native Execution Space**. Zones rely on Bedrock to the fullest extent, thereby benefiting from the collective security of the entire Nomos Network. From a user’s perspective, Zones are deeply interconnected environments that require virtually no setup and maintenance by developers - a result of their common structure and strong interoperability. They are also totally permissionless, with any Nomos user having the ability to keep a Zone live by serving as its executor. Despite this, Zones are resistant to censorship, ensuring that users will always have the option to exit a Zone if they so desire.
 
-- Reducing the amount of computation validators need by minimising  or eliminating block execution or verification from the Base Layer.
+## Other Ways to Build on Nomos
 
-- Reducing the amount of data light clients need to download through Data Availability Sampling.
-
-- Reducing data redundancy in the network via sharding techniques that decouple data stored on the blockchain from the data that a single node needs to process and store.
-
-<br />
-
-**Coordination Layer**
-
-Above the Base Layer is the Coordination Layer. The Coordination Layer's aim is to support functions common across all Execution Zones. To ensure maximum decentralisation, these functions are kept to the bare minimum, since everything on the Coordination Layer must be downloaded and verified by all validators. 
-
-The Coordination Layer provides the following functions only:
-
-- **Verification of ZK proofs:** The Coordination Layer's ability to verify ZK proofs facilitates powerful bridging capabilities, including private deposits and withdrawals between the Coordination Layer and Execution Zones, inter-Execution Zone private transfers, and generalised use cases.
-
-- **Message passing between Execution Zones:** The Coordination Layer enables Execution Zones to communicate asynchronously with each other. Such messaging is a powerful feature but not entirely trustless—as detailed in the forthcoming Nomos whitepaper.
-
-- **Special operations, such as those relating to the creation of new Execution Zones:** Initially, these special operations are limited to initiating new Execution Zones and the creation of a new zone's genesis block.  
-
-- **Censorship resistance:** Censorship resistance is an emergent property of the above features, enabling any user to "exit" an execution zone by submitting transactions to the Coordination Layer directly. This is particularly powerful in the event that an Execution Zone attempts to censor a user's actions.
-
-<br />
-
-**Execution Zones**
-
-The Base and Coordination Layers support a third layer of Execution Zones. Execution Zones provide the following properties: 
-
-- Share liquidity with the entire Nomos network.
-
-- Configurable latency reduction.
-
-- Configurable throughput increases.
-
-- Adaptability to specific applications and use cases.
-
-Execution Zones are most easily thought of as virtual sidechains that share the same global data availability space. Transactions associated with an Execution Zone are only processed by that zone's validators. However, unlike traditional sidechains, all applications on Nomos share the same blockchain, and data availability is uniformly ensured by the global Nomos network.
-
-This architecture makes Execution Zones more powerful than traditional sidechains as they:
-
-- Use trust-minimised bridging for communication. 
-
-- Can access each other's transactions securely. 
-
-- Share liquidity across the network. 
-
-- Enable improved security via restaking. 
-
-Execution Zones exist to satisfy a wide range of application requirements that may demand far greater performance characteristics than what a highly decentralised, monolithic blockchain can achieve before hitting scaling limits. Such applications are often willing to make compromises in terms of security or decentralisation to achieve higher performance. By combining the elastic consensus algorithm Carnot with a restaking mechanism and flexible execution models, Nomos grants a high degree of Execution Zone adaptability.
-
-![architect.png](/subpages/architect.png)
+Despite the advantages of Zones, they are not suitable for all applications. Nomos also provides support and unique features for **Sovereign Rollups**. These rollups are fully independent, without any restrictions imposed by Bedrock. This sovereign model provides greater freedom and customisability in creating a chain, allowing creators to maximise properties like performance at the expense of the neutrality and interoperability available on Zones.

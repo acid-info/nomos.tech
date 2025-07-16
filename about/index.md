@@ -1,37 +1,17 @@
 ---
-title: About Nomos
+title: Vision
 sidebar_position: 1
 hide_table_of_contents: true
 ---
 
-Nomos is an innovative blockchain platform designed to address the critical requirements of the network state. It aims to provide developers with secure, flexible, and scalable infrastructure for building a wide range of applications while respecting the privacy and sovereignty of its users.
+Once again, the world stands at a crossroads. For as long as humanity has lived together, there have been individuals seeking to control others, and individuals seeking freedom from that control. As history marched onward, technologies emerged that shifted this struggle toward one side or the other. From writing, to gunpowder, to the printing press, to the revolver – inventions would periodically arise and upset the balance of forces in unpredictable ways. In recent times, the internet – initially hailed as a bastion for free speech and free association – has become a tool for mass surveillance and control.
 
-Nomos serves as the trustless agreement layer of the [Logos](https://logos.co/) tech stack. Alongside the communications layer, [Waku](https://waku.org/), and the storage layer, [Codex](https://codex.storage/), it is one of the Logos Collective's foundational projects.
+The ideological experiments of the 19th and 20th centuries have made it clear that political action alone will not bring lasting freedoms to the human race. Recognising this, the cypherpunk movement sought to proactively create technologies to ensure that civil liberties become inviolable by design. Among their most influential creations was Bitcoin which, along with the blockchain protocols it inspired, built the foundation for a financial system independent from state power and elite control. However, as the public nature of these blockchains exposed their participants to government scrutiny and regulation, that original vision was gradually replaced with arcane financial instruments and predatory speculation.
 
-We believe that blockchain technology has the potential to lay the foundations of a fairer, less corruptible and, ultimately, freer society. However, its most successful implementations to date fall short of achieving this. 
+The [Logos movement](https://logos.co/) was founded as a revival of the cypherpunk ideal that has been all but forgotten over the past several decades. Logos has dedicated itself to the creation of decentralised technologies that would enable people to engage in social collaboration on their own terms – without being worried about censorship or coercion. These voluntary associations and institutions that function with an emergent order and are resistant to corruption are referred to as **network states**, in contrast to traditional states that rely on threats of violence to maintain control. Only with a technology stack that facilitates private and permissionless consensus, data storage, and communication can this vision be made a reality.
 
-<br/>
+**Nomos** was created by Logos to be the infrastructure facilitating the creation of network states and enabling people to easily interact with them. Using Nomos, network states are implemented as lightweight blockchains known as Zones, with an underlying chain providing consensus, security, and interoperability. Importantly, network states implemented on Nomos allow for social order to emerge and govern their operations, all while preserving critical properties that guarantee individual freedoms for all participants. These include privacy for users and infrastructure providers, censorship resistance, resilience against attacks, and credible neutrality.
 
-## Network-level resiliency, network-level sovereignty
+In essence, Nomos is the platform that will produce the conditions for true improvements over millennia-old cooperation techniques based on trust and control.
 
-We seek to maximize the antifragility of our network. It should be unstoppable and incorruptible, with security layers focused on deterring bad actors. Not only will Nomos support good nodes, it will protect and reward them. This type of antifragility is needed to power the self-sovereign virtual territories and network states of tomorrow. Decentralised, impregnable governance is the key to securing the future.
-
-We believe that absolute transparency massively limits the scope of the technology's adoption, and therefore its revolutionary potential. We cannot expect individuals to voluntarily exit the current system into one in which their every interaction (both financial and social) is forever available for the entire world to see. When we buy a coffee, for example, there is no need for the seller to see our salary, other purchase history, or political leanings.
-
-### Consent of the governed
-
-Furthermore, we believe consent to be a critical element of any governance system. We find the nation-state's claims of governance via implied consent to be extremely contrived.  And we believe blockchain-based systems represent an improvement because every on-chain action is voluntary and requires an individual to digitally sign, therefore, providing explicit consent.
-
-While this is certainly a step in the right direction, it does not go far enough. If an individual no longer aligns with the on-chain institutions of which they were once a part, today's blockchains offer a means of exiting the system to recreate something new. However, the cost to do so successfully can be prohibitively expensive.
-
-There have been numerous occasions in history where an on-chain community has been divided on some issue, resulting in a hard fork that creates two independent chains. In such situations, both networks suffer in terms of their overall security, making them more vulnerable to external attacks.
-
-Nomos leverages a novel architecture to avoid this situation. We believe that a simple disagreement over a community's path forward should not threaten the existence of either party. The Nomos network enables the creation of numerous semi-autonomous execution zones that share the main network's security while retaining the freedom to follow their own rulesets, and eventually become fully independent if they so choose.
-
-<br/>
-
-### History
-
-Work on Nomos began among a small subgroup of Status core contributors in June, 2021. The network takes its name from the ancient Greek concept of law, while alluding to the protection of its users’ autonomy.
-
-Nomos was first announced as a core Logos project in June 2023.
+The world stands at a crossroads. The greatest minds of this generation are working tirelessly to build the technology that will determine the future of civil rights for centuries to come – both on the side of coercion, and on the side of freedom. Your decisions now will determine which side emerges victorious.
