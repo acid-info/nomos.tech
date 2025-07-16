@@ -20,7 +20,12 @@ For detailed, up-to-date descriptions of how all these components work, take a l
 
 <br/>
 
-![Nomos Architecture](/subpages/nomos-architecture.webp)
+
+<!-- use HTML image tag and add caption: The Nomos architecture diagram. -->
+<div>
+  <img src="/subpages/nomos-architecture.webp" alt="Nomos Architecture" />
+  <p style={{ marginTop: '12px' }}><em>The Nomos architecture diagram.</em></p>
+</div>
 
 <br />
 
